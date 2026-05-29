@@ -45,17 +45,45 @@ DeepSeek 正在生成时，对应灯显示为黄灯：
 
 - Node.js 18 或更高版本。
 - Chrome 或 Microsoft Edge，用于加载本地浏览器扩展。
-- macOS / Windows / Linux 理论上都可运行；目前主要按本地开发原型验证。
+- macOS / Windows / Linux 理论上都可运行。
 
 ## 安装
 
+### 获取源码
+
 ```bash
-git clone https://github.com/<your-name>/ai-traffic-light-pet.git
+git clone https://github.com/Youny711/ai-traffic-light-pet.git
 cd ai-traffic-light-pet
 npm install
 ```
 
-把 `<your-name>` 替换成你自己的 GitHub 用户名或组织名。
+### macOS 安装包
+
+Apple Silicon Mac 可以从 Releases 下载：
+
+- [AI.Traffic.Light.Pet-1.0.0-arm64.dmg](https://github.com/Youny711/ai-traffic-light-pet/releases/download/v1.0.0-mac-arm64/AI.Traffic.Light.Pet-1.0.0-arm64.dmg)
+- [AI.Traffic.Light.Pet-1.0.0-arm64.zip](https://github.com/Youny711/ai-traffic-light-pet/releases/download/v1.0.0-mac-arm64/AI.Traffic.Light.Pet-1.0.0-arm64.zip)
+
+下载 `.dmg` 后拖入 Applications 即可。当前安装包是未公证版本，如果 macOS 提示无法打开，可以在“系统设置 -> 隐私与安全性”里手动允许。
+
+安装桌面 app 后，还需要按下面的步骤在 Chrome 或 Edge 中加载 `extension` 目录。
+
+### Windows 源码运行
+
+当前还没有发布 Windows 安装包。Windows 用户可以先用源码方式运行：
+
+1. 安装 [Node.js](https://nodejs.org/) 18 或更高版本。
+2. 安装 [Git](https://git-scm.com/download/win)。
+3. 打开 PowerShell，执行：
+
+```powershell
+git clone https://github.com/Youny711/ai-traffic-light-pet.git
+cd ai-traffic-light-pet
+npm install
+npm run desktop
+```
+
+启动后，再按下面的步骤在 Chrome 或 Edge 中加载 `extension` 目录。
 
 ## 运行桌面悬浮窗
 
@@ -151,7 +179,7 @@ npm run dist:mac
 
 生成 macOS 安装包，产物会输出到 `release/` 目录。
 
-当前 macOS 安装包是未公证版本，适合自己测试或小范围分发。如果 macOS 提示无法打开，可以在“系统设置 -> 隐私与安全性”里手动允许。面向公开用户分发时，建议使用 Apple Developer ID 做签名和 notarization。
+当前 macOS 安装包是未公证版本，适合自己测试或小范围分发。面向公开用户分发时，建议使用 Apple Developer ID 做签名和 notarization。
 
 ## macOS 安装包
 
