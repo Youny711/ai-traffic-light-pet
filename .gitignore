@@ -11,6 +11,7 @@ pnpm-debug.log*
 dist/
 build/
 out/
+release/
 coverage/
 
 # Local environment

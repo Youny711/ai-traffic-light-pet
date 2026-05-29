@@ -1,0 +1,29 @@
+appId: com.youny711.ai-traffic-light-pet
+productName: AI Traffic Light Pet
+copyright: Copyright © 2026 Youny711
+artifactName: ${productName}-${version}-${arch}.${ext}
+
+directories:
+  output: release
+
+files:
+  - src/**/*
+  - public/**/*
+  - package.json
+
+mac:
+  category: public.app-category.productivity
+  target:
+    - target: dmg
+      arch:
+        - arm64
+    - target: zip
+      arch:
+        - arm64
+  hardenedRuntime: false
+  gatekeeperAssess: false
+
+dmg:
+  window:
+    width: 540
+    height: 380

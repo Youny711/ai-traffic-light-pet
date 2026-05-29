@@ -145,6 +145,23 @@ npm test
 
 运行 Node.js 内置测试。
 
+```bash
+npm run dist:mac
+```
+
+生成 macOS 安装包，产物会输出到 `release/` 目录。
+
+当前 macOS 安装包是未公证版本，适合自己测试或小范围分发。如果 macOS 提示无法打开，可以在“系统设置 -> 隐私与安全性”里手动允许。面向公开用户分发时，建议使用 Apple Developer ID 做签名和 notarization。
+
+## macOS 安装包
+
+当前仓库的 GitHub Releases 会提供 Apple Silicon 版本：
+
+- `AI Traffic Light Pet-1.0.0-arm64.dmg`
+- `AI Traffic Light Pet-1.0.0-arm64.zip`
+
+下载 `.dmg` 后拖入 Applications 即可。安装后仍需要按上面的步骤在 Chrome 或 Edge 中加载 `extension` 目录。
+
 ## 目录结构
 
 ```text
@@ -166,7 +183,7 @@ tests/          自动化测试
 
 ## 当前限制
 
-- 这是本地开发原型，还没有打包安装器。
+- 目前只提供 macOS Apple Silicon 未公证安装包；Windows、Linux 和 Intel Mac 还没有发布安装包。
 - AI 官网可能调整页面结构或接口路径；如果某个平台状态不准确，需要更新扩展检测规则。
 - 扩展优先监听网页发起的对话/生成网络请求，DOM 检测只作为兜底。
 - 桌面窗口目前没有系统托盘、自动开机启动或设置页。
