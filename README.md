@@ -12,21 +12,28 @@ AI 红绿灯桌宠：一个轻量的本地桌面小组件，用横向红绿灯�
 
 ## 演示
 
-四个 AI 的状态独立显示，可以同时运行，互不影响：
-
-![Four AI providers running independently](docs/demo/multi-task.png)
-
-DeepSeek 正在生成时，对应灯显示为黄灯：
-
-![DeepSeek generating status](docs/demo/deepseek-generating-yellow.png)
-
-生成完成后，对应灯变为绿灯：
-
-![DeepSeek complete status](docs/demo/deepseek-complete-green.png)
-
-如果中途断网或请求失败，对应灯变为红灯：
-
-![DeepSeek network error status](docs/demo/deepseek-network-error-red.png)
+<table>
+  <tr>
+    <td width="50%">
+      <strong>四个 AI 独立运行</strong><br>
+      <img src="docs/demo/multi-task.png" alt="Four AI providers running independently">
+    </td>
+    <td width="50%">
+      <strong>DeepSeek 正在生成：黄灯</strong><br>
+      <img src="docs/demo/deepseek-generating-yellow.png" alt="DeepSeek generating status">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>DeepSeek 生成完成：绿灯</strong><br>
+      <img src="docs/demo/deepseek-complete-green.png" alt="DeepSeek complete status">
+    </td>
+    <td width="50%">
+      <strong>中途断网或请求失败：红灯</strong><br>
+      <img src="docs/demo/deepseek-network-error-red.png" alt="DeepSeek network error status">
+    </td>
+  </tr>
+</table>
 
 ## 功能
 
