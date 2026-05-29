@@ -12,6 +12,10 @@ AI 红绿灯桌宠：一个轻量的本地桌面小组件，用横向红绿灯�
 
 ## 演示
 
+四个 AI 的状态独立显示，可以同时运行，互不影响：
+
+![Four AI providers running independently](docs/demo/multi-task.png)
+
 DeepSeek 正在生成时，对应灯显示为黄灯：
 
 ![DeepSeek generating status](docs/demo/deepseek-generating-yellow.png)
