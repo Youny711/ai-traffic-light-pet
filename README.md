@@ -157,8 +157,8 @@ npm run dist:mac
 
 当前仓库的 GitHub Releases 会提供 Apple Silicon 版本：
 
-- `AI Traffic Light Pet-1.0.0-arm64.dmg`
-- `AI Traffic Light Pet-1.0.0-arm64.zip`
+- `AI.Traffic.Light.Pet-1.0.0-arm64.dmg`
+- `AI.Traffic.Light.Pet-1.0.0-arm64.zip`
 
 下载 `.dmg` 后拖入 Applications 即可。安装后仍需要按上面的步骤在 Chrome 或 Edge 中加载 `extension` 目录。
 
