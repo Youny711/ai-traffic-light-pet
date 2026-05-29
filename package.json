@@ -1,0 +1,27 @@
+{
+  "name": "ai-traffic-light-pet",
+  "version": "1.0.0",
+  "description": "A tiny desktop traffic-light companion for ChatGPT, Gemini, Doubao, and DeepSeek web status.",
+  "main": "src/desktop/main.js",
+  "scripts": {
+    "desktop": "electron .",
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "ai",
+    "chatgpt",
+    "gemini",
+    "deepseek",
+    "doubao",
+    "desktop-pet",
+    "browser-extension",
+    "electron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^42.3.0"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "AI Traffic Light Pet Bridge",
+  "version": "0.1.0",
+  "description": "把 ChatGPT、Gemini、豆包和 DeepSeek 网页运行状态发送给本地 AI 红绿灯桌宠。",
+  "permissions": [],
+  "host_permissions": [
+    "http://127.0.0.1:4321/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*",
+        "https://www.doubao.com/*",
+        "https://doubao.com/*",
+        "https://chat.deepseek.com/*",
+        "https://www.deepseek.com/*"
+      ],
+      "js": [
+        "page-network-hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*",
+        "https://www.doubao.com/*",
+        "https://doubao.com/*",
+        "https://chat.deepseek.com/*",
+        "https://www.deepseek.com/*"
+      ],
+      "js": [
+        "status-detector.js",
+        "content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
