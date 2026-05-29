@@ -10,6 +10,20 @@ AI 红绿灯桌宠：一个轻量的本地桌面小组件，用横向红绿灯�
 
 扩展只上报 `provider`、`status` 和页面标题，不读取、不保存、不上传聊天内容。
 
+## 演示
+
+DeepSeek 正在生成时，对应灯显示为黄灯：
+
+![DeepSeek generating status](docs/demo/deepseek-generating-yellow.png)
+
+生成完成后，对应灯变为绿灯：
+
+![DeepSeek complete status](docs/demo/deepseek-complete-green.png)
+
+如果中途断网或请求失败，对应灯变为红灯：
+
+![DeepSeek network error status](docs/demo/deepseek-network-error-red.png)
+
 ## 功能
 
 - 支持 ChatGPT / Gemini / 豆包 / DeepSeek。
